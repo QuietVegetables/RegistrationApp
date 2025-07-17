@@ -20,8 +20,10 @@ const db = mysql.createConnection({
     password: 'database password shown on database info',
     database: 'database shown on database info'
 });
+//test
 
 db.connect((err) => {
+    console.log('Connecting to database...');
     if (err) {
         throw err;
     }
